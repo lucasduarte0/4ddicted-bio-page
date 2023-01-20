@@ -21,9 +21,9 @@ function Button(props) {
     };
 
     return (
-        <a href={props.url} className='button w-[80%] mx-auto' style={style}>
+        <a href={props.url} className='button w-full mx-auto font-semibold' style={style}>
             {props.name}
-            <i class={`fa-brands ${props.icon} fa-xl my-2 mx-2 absolute text-[${props.colors}]`}></i>
+            <i class={`fa-brands ${props.icon} fa-xl my-2 ml-2 text-[${props.colors}]`}></i>
         </a>
     );
 }
@@ -31,7 +31,7 @@ function Button(props) {
 function Profile() {
     return (
         <section className='profile c'>
-            <div className='m-auto w-full sm:w-[300px]'>
+            <div className='m-auto w-full sm:w-[300px] px-10'>
                 <div className='mb-5'>
                     <div className='profile-picture'>
                         <img src={profile.picture} alt={profile.name}></img>
