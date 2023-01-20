@@ -31,7 +31,7 @@ function AxiosRequest() {
   useEffect(() => {
     axios
       .get(
-        "http://gsx2json.com/api?id=1JKgL5HStZWWAlkGPVCT5OWl6awKTahRutTyUitwAOzI&sheet=produtos"
+        "https://gsx2json.com/api?id=1JKgL5HStZWWAlkGPVCT5OWl6awKTahRutTyUitwAOzI&sheet=produtos"
       )
       .then((response) => {
         setData(response.data.rows);
