@@ -62,6 +62,11 @@ h1 {
   box-shadow: whitesmoke 7px 7px 0;
 }/*# sourceMappingURL=styles.css.map */
 
+.profile .social_media .button:hover {
+  box-shadow: whitesmoke 3px 3px 0;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
 #whats-icon {
   color: white;
 }

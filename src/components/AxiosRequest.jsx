@@ -3,7 +3,7 @@ import axios from "axios";
 
 function Card(props) {
   return (
-    <div class="relative bg-white shadow-md w-auto rounded-2xl my-3 cursor-pointer">
+    <div class="relative bg-white shadow-md w-auto rounded-2xl my-2 cursor-pointer">
       <div class="overflow-x-hidden rounded-2xl relative">
         <img class="h-auto rounded-2xl w-full object-cover" src={props.url} />
         {/* <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
@@ -12,9 +12,9 @@ function Card(props) {
       </div>
       <div class="px-2 py-3 flex justify-between ">
         <div>
-          <p class="text-base font-semibold text-gray-900 mb-0">{props.name}</p>
-          <p class="text-sm text-gray-800 mt-0">Tamanho: {props.tamanho}</p>
-          <p class="text-sm text-gray-800 mt-0">Condição: {props.condicao}</p>
+          <p class="text-sm font-semibold text-gray-900 mb-0">{props.name}</p>
+          <p class="text-xs text-gray-800 mt-0">Tamanho: {props.tamanho}</p>
+          <p class="text-xs text-gray-800 mt-0">Condição: {props.condicao}</p>
         </div>
       </div>
       <div class="mb-3 mx-2 text-center bg-[#40b355] w-auto rounded-xl cursor-pointer p-2.5 bg-gray">
@@ -42,9 +42,9 @@ function AxiosRequest() {
   }, []);
 
   return (
-    <section className="catalogue mx-3">
+    <section className="catalogue mx-4">
       {data ? (
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-4">
           {data.map((item, i) => (
             <Card
               name={item.name}
@@ -56,7 +56,7 @@ function AxiosRequest() {
           ))}
         </div>
       ) : (
-        <p>Loading...</p>
+        <p className="text-white text-center py-10">Carregando...</p>
       )}
     </section>
   );

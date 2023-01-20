@@ -1,5 +1,5 @@
 import AxiosRequest from "../components/AxiosRequest";
-import Catalogue from "../sections/Catalogue";
+import Footer from "../sections/Footer";
 import Profile from "../sections/Profile";
 
 function Home() {
@@ -8,6 +8,7 @@ function Home() {
             <Profile />
             {/* <Catalogue /> */}
             <AxiosRequest />
+            <Footer />
         </div>
     );
 }
