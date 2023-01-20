@@ -13,10 +13,6 @@ body {
   background-color: black;
 }
 
-section {
-  padding: 15px;
-}
-
 /*------- HEADER -------*/
 h1 {
   margin-bottom: 5px;
@@ -68,5 +64,5 @@ h1 {
 }/*# sourceMappingURL=styles.css.map */
 
 #whats-icon {
-  color: #40b355;
+  color: white;
 }
