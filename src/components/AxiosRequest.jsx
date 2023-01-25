@@ -3,7 +3,7 @@ import axios from "axios";
 
 function Card(props) {
   return (
-    <div class="relative bg-white shadow-md w-auto rounded-2xl my-2 cursor-pointer">
+    <div class="relative flex flex-col bg-white shadow-md w-auto rounded-2xl my-2 cursor-pointer">
       <div class="overflow-x-hidden rounded-2xl relative">
         <img class="h-auto rounded-2xl w-full object-cover" src={props.url} />
         {/* <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
@@ -16,11 +16,13 @@ function Card(props) {
           <p class="text-xs text-gray-800 mt-0">Tamanho: {props.tamanho}</p>
           <p class="text-xs text-gray-800 mt-0">Condição: {props.condicao}</p>
         </div>
-      </div>
-      <div class="mb-3 mx-2 text-center bg-[#40b355] w-auto rounded-xl cursor-pointer p-2.5 bg-gray">
+      </div>     
+      <div className="flex items-end flex-grow">
+      <div class="mb-3 mx-2 text-center bg-[#40b355] w-full rounded-xl cursor-pointer p-2.5 bg-gray">
         <span className="text-white text-sm">SABER MAIS</span>
         <i id="whats-icon" class="ml-2 fa-brands fa-whatsapp fa-xl"></i>
       </div>
+      </div> 
     </div>
   );
 }
